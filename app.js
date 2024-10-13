@@ -13,7 +13,7 @@ function setScore(score) {
 
 function setImage() {
   if (getScore() >= 150) {
-    $circle.setAttribute('src', 'lizzard.png')
+    $circle.setAttribute('src', 'goose.png')
   }
 }
 
