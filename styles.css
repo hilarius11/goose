@@ -55,7 +55,7 @@ body {
   text-shadow: 0px 0px 4px rgba(234, 182, 64, 0.25);
   font-size: 24px;
   font-weight: 800;
-  background: linear-gradient(10deg, #000000 0%, #ef882b 100%);
+  background: linear-gradient(10deg, #8b00ff 0%, #8b00ff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
