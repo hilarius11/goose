@@ -12,7 +12,7 @@ function setScore(score) {
 }
 
 function setImage() {
-  if (getScore() >= 150) {
+  if (getScore() >= 0) {
     $circle.setAttribute('src', 'goose.jpg')
   }
 }
