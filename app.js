@@ -26,6 +26,23 @@ function addOne() {
   setImage()
 }
 
+function start_handler(ev) {
+  // If the user makes simultaneous touches, the browser will fire a
+  // separate touchstart event for each touch point. Thus if there are
+  // three simultaneous touches, the first touchstart event will have
+  // targetTouches length of one, the second event will have a length
+  // of two, and so on.
+  ev.preventDefault();
+  // Cache the touch points for later processing of 2-touch pinch/zoom
+  if (ev.targetTouches.length === 2) {
+    for (let i = 0; i < ev.targetTouches.length; i++) {
+      tpCache.push(ev.targetTouches[i]);
+    }
+  }
+  if (logEvents) log("touchStart", ev, true);
+  update_background(ev);
+}
+
 $circle.addEventListener('click', (event) => {
   const rect = $circle.getBoundingClientRect()
 
