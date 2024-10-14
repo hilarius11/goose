@@ -62,6 +62,7 @@ body {
   pointer-events: none;
   user-select: none;
   animation: move-up 2s forwards;
+  touch-action;
 }
 
 @keyframes move-up {
