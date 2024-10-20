@@ -21,6 +21,7 @@ function setImage() {
   if (getScore() >= 1500) {
     $circle.setAttribute('src', 'goose3.jpg')
   }
+}
   
 function getScore() {
   return Number(localStorage.getItem('score')) ?? 0
