@@ -8,15 +8,12 @@ function start() {
 
 function setScore(score) {
   localStorage.setItem('score', score)
-  localStorage.setItem('scorer', scorer)
   $score.textContent = score
 }
 
 function setImage() {
   if (getScore() >= 1000) {
     $circle.setAttribute('src', 'goose2.jpg')
-    if (getScorer() >= 1500
-        $circle.setAttribute('src', 'goose3.jpg')
   }
 }
 
