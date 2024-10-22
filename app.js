@@ -12,17 +12,13 @@ function setScore(score) {
 }
 
 function setImage() {
-  if (getScore() >= 200) {
+  if (getScore() >= 1000) {
     $circle.setAttribute('src', 'goose2.jpg')
-  }
-}
-
-function setImage() {
-  if (getScore() >= 1500) {
+     if (getScore() >= 1500) {
     $circle.setAttribute('src', 'goose3.jpg')
   }
 }
-  
+
 function getScore() {
   return Number(localStorage.getItem('score')) ?? 0
 }
