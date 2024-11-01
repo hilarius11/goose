@@ -43,7 +43,7 @@ body {
   height: 200px;
   border-radius: 50%;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-  transition: transform 0.2s ease;
+  transition: transform 0.1s ease;
   --tiltX: 0deg;
   --tiltY: 0deg;
   transform: rotateX(var(--tiltX)) rotateY(var(--tiltY));
